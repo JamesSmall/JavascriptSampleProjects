@@ -1,0 +1,77 @@
+/*
+	Author: james small
+	Date: 5/12/2017
+*/
+span{
+	width: 40vh;
+	height: 40vh;
+
+	float:left;
+	border-radius: 10vh;
+}
+footer{
+	clear:left;
+	background-color: #AA00AA;
+}
+h1{
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+
+
+}
+header{
+	background-color: #AA00AA;
+}
+#red{
+	background-color: #990000;
+}
+#blue{
+	background-color: #000099;
+}
+#green{
+	background-color: #009900;
+}
+#yellow{
+	clear:left;
+	background-color: #999900;
+}
+#container{
+	margin: auto;
+	width:80vh; /*expected 80% for div when not full screen */
+	height: 100vh;
+}
+main{
+	background: #880088;
+	height:80vh;
+}
+body{
+	background-color: #000000
+}
+@media only screen and (orientation:portrait){ /*based of width instead of height */
+	
+	span{
+		width: 49vw;
+		height: 45vw;
+
+		float:left;
+		border-radius: 10vw;
+	}
+	#container{
+		margin: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+		width:98vw; /*expected 80% for div when not full screen */
+		height: 90vw;
+	}
+	main{
+		height:90vw;
+	}
+}
+@media only screen and (max-width: 64em){ /*made boxes smaller to fit better on smaller devices*/
+	h1{
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+}
